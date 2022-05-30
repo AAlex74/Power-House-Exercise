@@ -1,0 +1,33 @@
+{
+    "tables": {
+        "exercise": {
+            "tableName": "exercise",
+            "schema": {
+                "exerciseId": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "exerciseId",
+                    "seqType": "Sequelize.INTEGER(5).UNSIGNED"
+                },
+                "exerciseName": {
+                    "allowNull": true,
+                    "field": "exerciseName",
+                    "seqType": "Sequelize.STRING(50)"
+                },
+                "exerciseDuration": {
+                    "allowNull": true,
+                    "field": "exerciseDuration",
+                    "seqType": "Sequelize.STRING(50)"
+                },
+                "exerciseType": {
+                    "allowNull": true,
+                    "field": "exerciseType",
+                    "seqType": "Sequelize.STRING"
+                }
+            },
+            "indexes": []
+        }
+    },
+    "revision": 3
+}
